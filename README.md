@@ -1,39 +1,50 @@
-🤖 AI Employee Vault 📂
+# 🤖 AI Employee Vault 📂
 
-AI-Powered File Organizer & Processor ✨
+AI-Powered File Organizer & Processor ✨ – now with **Silver Tier automation**  
 
 This project helps you:
 
-📝 Drop files in the Inbox folder
+📝 Drop files in the **Inbox** folder  
 
-📂 Automatically move them to Needs_Action
+📂 Automatically move them to **Needs_Action**  
 
-🤖 Process metadata using OpenAI GPT
+🤖 Process metadata using **OpenAI GPT**  
 
-📄 Create .md files with AI responses
+📄 Create `.md` files with AI responses  
 
-Folders included:
+📧 **Gmail watcher** – detects unread/important emails (simulation or real mode)  
 
-Vault/Inbox – Place new files here
+💬 **Slack watcher** – detects messages in Slack channels (simulation or real mode)  
 
-Vault/Needs_Action – Files copied here for action
+---
 
-Vault/Done – Completed files (optional)
+### Folders included:
 
-Watchers & Scripts:
+- `Vault/Inbox` – Place new files here  
+- `Vault/Needs_Action` – Files copied here for action  
+- `Vault/Done` – Completed files (optional)  
 
-watchers/filesystem_watcher.py – Monitors Inbox & triggers AI
+---
 
-watchers/process_md.py – Helper script for processing .md files
+### Watchers & Scripts:
 
-replacements.txt – Example file for replacements
+- `Watchers/filesystem_watcher.py` – Monitors Inbox & triggers AI  
+- `Watchers/process_md.py` – Helper script for processing `.md` files  
+- `Watchers/gmail_watcher.py` – Handles Gmail messages  
+- `Watchers/slack_watcher.py` – Handles Slack messages  
+- `replacements.txt` – Example file for replacements  
 
-💡 Usage:
+---
 
-Set your OpenAI API key in .env file (DO NOT push this!)
+### 💡 Usage:
 
-Run filesystem_watcher.py
+1. Set your **OpenAI API key** in `.env` (DO NOT push this!)  
+2. Run `main.py` to check **Inbox, Gmail & Slack** (simulation mode supported)  
+3. Drop a file in Inbox → watch AI work magic!  
 
-Drop a file in Inbox → watch AI work magic!
+---
 
-⚠️ Note: Keep .env and venv/ out of GitHub.
+### ⚠️ Note:
+
+- Keep `.env` and `venv/` out of GitHub  
+- Silver Tier watchers support **simulation mode** if credentials are not provided  
